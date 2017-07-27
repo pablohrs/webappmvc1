@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using webappmvc1.Models;
 
 namespace webappmvc1.Controllers
 {
@@ -10,7 +11,10 @@ namespace webappmvc1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            MiClase _miclass = new MiClase();
+
+
+            return View(_miclass);
         }
 
         public ActionResult About()
