@@ -1,4 +1,4 @@
-﻿@model webappmvc1.Models.MiClase 
+﻿@*@model webappmvc1.Models.Servicio*@
 
 @{
     ViewBag.Title = "Home Page";
@@ -12,5 +12,19 @@
 
 
 <div>
-    Mostrando la cantidad de @Model.cantidad.ToString()
+     @*<table style="">
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Telefono</th>
+        </tr>
+        @foreach (var cli in Model.lista_clientes)
+        { 
+            <tr>
+                <td>@cli.nom_cliente</td>
+                <td>@cli.dir_cliente</td>
+                <td>@cli.telefono_cliente</td>
+            </tr>
+        }
+    </table>*@      
 </div>

@@ -11,10 +11,9 @@ namespace webappmvc1.Controllers
     {
         public ActionResult Index()
         {
-            MiClase _miclass = new MiClase();
+            Servicio _miclass = new Servicio();
 
-
-            return View(_miclass);
+            return View();
         }
 
         public ActionResult About()
