@@ -12,7 +12,7 @@ namespace webappmvc1.Controllers
 {
     public class ContactosController : Controller
     {
-        private dbContext db = new dbContext();
+        private ContactosDbContext db = new ContactosDbContext();
 
         // GET: Contactos
         public ActionResult Index()

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebaModelStoreContainer" CdmEntityContainer="PruebaEntities">
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="PruebaModel.clientes">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="cod_cliente" ColumnName="cod_cliente" />
+          <ScalarProperty Name="nom_cliente" ColumnName="nom_cliente" />
+          <ScalarProperty Name="dir_cliente" ColumnName="dir_cliente" />
+          <ScalarProperty Name="telefono_cliente" ColumnName="telefono_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="cod_cliente" />
+    </Key>
+    <Property Name="cod_cliente" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nom_cliente" Type="nvarchar" MaxLength="50" />
+    <Property Name="dir_cliente" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefono_cliente" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="PruebaModelStoreContainer">
+    <EntitySet Name="clientes" EntityType="Self.clientes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
